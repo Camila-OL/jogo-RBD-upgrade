@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jogo RBD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div class="area-int">
+        <div id="backImg" class="back-image nuestro-bg">
+            <header>
+                <p>Acerte a música <br/> <strong class="logo">RBD</strong></p>
+                <div class="bar">
+                    <div id="healthBar" class="health-bar">❤️<strong class="name">--</strong></div>
+                </div>                     
+            </header>
+            <div class="centro">
+                <img src="assets/images-gif/Rbd.gif" id="gif" class="gif" alt="pers img"/>
+                <input type="text" placeholder="Digite seu nome" class="nome"/>
+                <audio id="biteSound">
+                    <source src="bite.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div id="options" class="options">
+                    <button class="option" onclick="checkAnswer(this)"></button>
+                    <button class="option" onclick="checkAnswer(this)"></button>
+                    <br/>
+                    <button class="option" onclick="checkAnswer(this)"></button>
+                    <button class="option" onclick="checkAnswer(this)"></button>
+                </div>
+                <button onclick="startButton()" class="start">start</button>
+            </div>
+        </div>
+        <button id="nextButton" onclick="nextPersonagem()" style="display:none;">Next Fruit</button>
+    
+        <div id="myText" class="error">VOCÊ ERROU</div>
+        <div id="myText1" class="correct">ACERTOU!!!!!</div>
+        <div class="over">
+            <strong>GAME OVER!!!</strong>
+            <br>
+            <button class="reiniciar">Reiniciar</button>
+        </div>
+        <div class="congrat">
+            <strong>CONCLUÍDO! VOCÊ É UM GRANDE FÃ</strong>
+            <br>
+            <button class="sair">Sair</button>
+        </div>
+    </div>
+    
+    <script src="script/index.js"></script>
+</body>
+</html>

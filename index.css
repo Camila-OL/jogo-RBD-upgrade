@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.area-int {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to left, #ff03b3, #1e00ff);
+}
+#backImg {
+    width: 400px;
+    height: 100vh;
+    background-color: blueviolet;
+}
+p {
+    font-family: "Honk", system-ui;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgb(181, 0, 253);
+}
+.name {
+    font-family: "Honk", system-ui;
+    font-size: 20px;
+}
+.logo {
+    font-size: 40px;
+    text-shadow: 5px 5px 5px #93a05a;
+}
+.bar {
+    width: 200px;
+    height: 10px;
+    border: 1px solid #1e00ff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 0, 0.3);
+    margin-left: 10px;
+}
+#healthBar {
+    width: 200px;
+    height: 10px;
+    background-image: linear-gradient(to left, yellow, red);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.centro {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#gif {
+    width: 350px;
+    margin-top: 20%;
+}
+.nome {
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 5px;
+    border-left: 5px double #ff03b3;
+    border-right: 5px double #1e00ff;
+    border-top: 5px double rgb(181, 0, 253);
+    border-bottom: 5px double #93a05a;
+    color: #fff;
+    text-align: center;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-right: 2%;
+}
+.start {
+    font-family: "Honk", system-ui;
+    width: 120px;
+    border-radius: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(to left, #ff03b3, #1e00ff);
+}
+#options {
+    display: none;
+}
+.option {
+    font-family: "Honk", system-ui;
+    width: 150px;
+    border-radius: 40px;
+    font-size: 21px;
+    cursor: pointer;
+    background-image: linear-gradient(to left, #ff03b3, #1e00ff);
+    margin-top: 5%;
+}
+.option:hover {
+    box-shadow: 5px 5px 5px #93a05a;
+}
+.error, .correct {
+    position: absolute;
+    font-family: "Honk", system-ui;
+    font-size: 50px;
+    opacity: 0;
+    animation: aparecer 5s forwards, desaparecer 2s forwards;
+    margin-top: 25%;
+}
+@keyframes aparecer {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes desaparecer {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+.over, .congrat {
+    display: none;
+    position: absolute;
+    font-family: "Honk", system-ui;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20%;
+}
+.congrat {
+    width: 300px;
+    text-align: center;
+}
+.over button, .congrat button {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    width: 150px;
+    border-radius: 40px;
+    font-size: 21px;
+    cursor: pointer;
+    background-image: linear-gradient(to left, #ff03b3, #1e00ff);
+}
+
+.nuestro-bg {
+    background-image: radial-gradient(ellipse at bottom, rgba(181, 0, 253, 0.6) 0%, rgba(255,255,255,0) 80%), url('assets/images/Y soy Rebelde_.jpg');
+    background-size: cover;
+    background-position: center;
+    border-left: 5px double #ff03b3;
+    border-right: 5px double #1e00ff;
+    border-top: 5px double rgb(181, 0, 253);
+    border-bottom: 5px double #93a05a;
+}
+.asi-bg {
+    background-image: url('assets/images/Anahí.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-left: 5px double #ff03b3;
+    border-right: 5px double #1e00ff;
+    border-top: 5px double rgb(181, 0, 253);
+    border-bottom: 5px double #93a05a;
+}
+.atu-bg {
+    background-image: url('assets/images/miguel1.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-left: 5px double #ff03b3;
+    border-right: 5px double #1e00ff;
+    border-top: 5px double rgb(181, 0, 253);
+    border-bottom: 5px double #93a05a;
+}
+.cer-bg {
+    background-image: url('assets/images/Inicio _ X.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.fue-bg {
+    background-image: url('assets/images/Dulce.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.bes-bg {
+    background-image: url('assets/images/lupi miguel.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.ina-bg {
+    background-image: url('assets/images/Christian & Anahi - Portivez.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.cua-bg {
+    background-image: url('assets/images/Maite Perroni.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.fut-bg {
+    background-image: url('assets/images/diego1.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.ten-bg {
+    background-image: url('assets/images/Wallpaper Anahí e Dulce.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.sol-bg {
+    background-image: url('assets/images/giovanni2.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.mev-bg {
+    background-image: url('assets/images/roberta4.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.ser-bg {
+    background-image: url('assets/images/roberta mia lupi1.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.una-bg {
+    background-image: url('assets/images/Christian Chávez.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.nop-bg {
+    background-image: url('assets/images/roberta3.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.tra-bg {
+    background-image: url('assets/images/Anahí durante show.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.ens-bg {
+    background-image: url('assets/images/Maite Perroni (1).jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.est-bg {
+    background-image: url('assets/images/diego e roberta.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.reb-bg {
+    background-image: url('assets/images/giovanni mia.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.unp-bg {
+    background-image: url('assets/images/Anahí HD.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.aun-bg {
+    background-image: url('assets/images/miguel2.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.que-bg {
+    background-image: url('assets/images/roberta mia lupi1.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.out-bg {
+    background-image: url('assets/images/roberta1.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.sal-bg {
+    background-image: url('assets/images/mia2.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.san-bg {
+    background-image: url('assets/images/roberta2.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.emp-bg {
+    background-image: url('assets/images/maite1.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.fur-bg {
+    background-image: url('assets/images/roberta lupi.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.quf-bg {
+    background-image: url('assets/images/poncho show.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cer-bg, .fue-bg, .bes-bg, .ina-bg,
+.cua-bg, .fut-bg, .ten-bg, .sol-bg,
+.mev-bg, .ser-bg, .una-bg, .nop-bg,
+.tra-bg, .ens-bg, .est-bg, .reb-bg,
+.unp-bg, .aun-bg, .que-bg, .out-bg,
+.sal-bg, .san-bg, .emp-bg, .fur-bg,
+.quf-bg {
+    border-left: 5px double #ff03b3;
+    border-right: 5px double #1e00ff;
+    border-top: 5px double rgb(181, 0, 253);
+    border-bottom: 5px double #93a05a;
+}
