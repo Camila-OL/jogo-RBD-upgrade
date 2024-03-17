@@ -94,7 +94,7 @@ p {
     font-size: 50px;
     opacity: 0;
     animation: aparecer 5s forwards, desaparecer 2s forwards;
-    margin-top: 25%;
+    margin-top: 30%;
 }
 @keyframes aparecer {
     from {
@@ -120,7 +120,7 @@ p {
     font-family: "Honk", system-ui;
     font-size: 50px;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 30%;
 }
 .congrat {
     width: 300px;
